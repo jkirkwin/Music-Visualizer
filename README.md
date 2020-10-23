@@ -1,6 +1,8 @@
 # Music-Visualizer
 Group project for CSC 475: Music Retrieval Techniques
 
+# a test heading
+
 ## Git notes
 The `master` branch is protected and requires a pull request to merge code in. Pull requests require one reviewer's approval.
 
