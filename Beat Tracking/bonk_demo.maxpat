@@ -40,15 +40,112 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 399.0, 509.0, 153.0, 34.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Flashes on every detected beat in the scaled output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 197.5, 368.0, 150.0, 34.0 ],
+					"text" : "Flashes on every detected beat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 486.0, 343.0, 150.0, 62.0 ],
+					"text" : "Scale the gain down to detect the loudest beats. \nI imagine there is a more idiomatic way to do this."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 452.0, 475.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 391.0, 268.0, 99.0, 99.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "list", "list", "" ],
+					"patching_rect" : [ 452.0, 429.0, 100.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attackframes" : 1,
+						"debouncedecay" : 0.0,
+						"debug" : 0,
+						"firstbin" : 1.0,
+						"halftones" : 6.0,
+						"hithresh" : 5.0,
+						"hop" : 128,
+						"learn" : 0,
+						"lothresh" : 2.5,
+						"maskdecay" : 0.699999988079071,
+						"masktime" : 4,
+						"minbandwidth" : 1.5,
+						"minvel" : 7.0,
+						"nfilters" : 11,
+						"npoints" : 256,
+						"overlap" : 1.0,
+						"spew" : 0,
+						"useloudness" : 0
+					}
+,
+					"text" : "bonk~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 452.0, 262.0, 22.0, 140.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 257.5, 343.0, 24.0, 24.0 ],
+					"patching_rect" : [ 257.5, 334.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.5, 268.0, 99.0, 99.0 ]
+					"presentation_rect" : [ 277.0, 290.5, 54.0, 54.0 ]
 				}
 
 			}
@@ -91,7 +188,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 197.5, 262.0, 45.0, 45.0 ]
+					"patching_rect" : [ 183.5, 258.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -113,13 +210,27 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 209.5, 122.575757503509521, 219.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.5, 122.575757503509521, 219.0, 89.0 ],
+					"presentation_rect" : [ 271.0, 145.575757503509521, 219.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-5", 0 ]
@@ -128,15 +239,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"order" : 1,
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-4", 1 ],
 					"order" : 2,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -144,8 +255,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 3,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
