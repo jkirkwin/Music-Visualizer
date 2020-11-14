@@ -124,18 +124,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 346.0, 209.0, 150.0, 60.0 ],
-					"text" : "Don't think this is working yet, goal is to have a big boost in xyz dimensions on every beat"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2465,7 +2453,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 573.5, 395.0, 128.0, 32.0 ],
-					"saturation" : 0.219607843137255
+					"saturation" : 0.427450980392157
 				}
 
 			}
