@@ -2453,7 +2453,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 573.5, 395.0, 128.0, 32.0 ],
-					"saturation" : 0.427450980392157
+					"saturation" : 0.462745098039216
 				}
 
 			}
