@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1634.0, -58.0, 1090.0, 899.0 ],
+		"rect" : [ 1634.0, -194.0, 1165.0, 899.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-75",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +54,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -78,7 +78,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-72",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -110,9 +110,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Filter Partition Frequency",
 					"id" : "obj-50",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -123,9 +123,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Velocity Cutoff",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -136,13 +136,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Audio In",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 31.953688621520996, 96.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -585,13 +585,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "bonk~.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
