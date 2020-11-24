@@ -166,43 +166,42 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 434.736845016479492, 460.578947305679321, 90.0, 34.0 ],
-					"text" : "Low frequency beats"
+					"patching_rect" : [ 434.736845016479492, 460.578947305679321, 75.0, 34.0 ],
+					"text" : "Intense, High Freq"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 311.736845016479492, 460.578947305679321, 108.0, 34.0 ],
-					"text" : "High frequency beats"
+					"patching_rect" : [ 311.736845016479492, 460.578947305679321, 108.0, 20.0 ],
+					"text" : "Intense Beats"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.736845016479492, 460.578947305679321, 86.0, 34.0 ],
-					"text" : "More intense beats"
+					"patching_rect" : [ 215.736845016479492, 460.578947305679321, 86.0, 20.0 ],
+					"text" : "All Beats"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.736845016479492, 460.578947305679321, 66.0, 20.0 ],
-					"text" : "All beats"
+					"patching_rect" : [ 538.736845016479492, 460.578947305679321, 65.0, 34.0 ],
+					"text" : "Intense, Low Freq"
 				}
 
 			}
