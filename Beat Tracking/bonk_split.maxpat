@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1634.0, -194.0, 1165.0, 899.0 ],
+		"rect" : [ 1634.0, -186.0, 1165.0, 899.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,9 +40,9 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Beats Above Velocity Threshold",
 					"id" : "obj-75",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -52,9 +52,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Beats Above Frequency Cutoff",
 					"id" : "obj-74",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -64,9 +64,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "All Beats",
 					"id" : "obj-73",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -76,9 +76,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Beats Below Frequency Cutoff",
 					"id" : "obj-72",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -112,7 +112,7 @@
 				"box" : 				{
 					"comment" : "Filter Partition Frequency",
 					"id" : "obj-50",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -125,7 +125,7 @@
 				"box" : 				{
 					"comment" : "Velocity Cutoff",
 					"id" : "obj-49",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -138,11 +138,11 @@
 				"box" : 				{
 					"comment" : "Audio In",
 					"id" : "obj-48",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.953688621520996, 96.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -585,7 +585,13 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "bonk~.mxe64",
+				"type" : "mx64"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
