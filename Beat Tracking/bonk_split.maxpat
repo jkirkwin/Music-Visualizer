@@ -40,6 +40,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 415.0, 662.337981224060059, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.0, 662.337981224060059, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"linecount" : 9,
 					"maxclass" : "comment",
@@ -54,7 +76,7 @@
 				"box" : 				{
 					"comment" : "Beats Above Velocity Threshold",
 					"id" : "obj-75",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -66,7 +88,7 @@
 				"box" : 				{
 					"comment" : "Intense Beats Above Frequency Cutoff",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -78,7 +100,7 @@
 				"box" : 				{
 					"comment" : "All Beats",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -90,7 +112,7 @@
 				"box" : 				{
 					"comment" : "Intense Beats Below Frequency Cutoff",
 					"id" : "obj-72",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -124,11 +146,11 @@
 				"box" : 				{
 					"comment" : "Filter Partition Frequency",
 					"id" : "obj-50",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 716.285016059875488, 231.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -137,11 +159,11 @@
 				"box" : 				{
 					"comment" : "Velocity Cutoff",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 254.785016059875488, 231.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -150,11 +172,11 @@
 				"box" : 				{
 					"comment" : "Audio In",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 31.953688621520996, 231.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -532,9 +554,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-45", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"midpoints" : [ 267.476505398750305, 498.0, 267.476505398750305, 498.0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-45", 2 ]
 				}
 
 			}
@@ -635,13 +671,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "bonk~.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
