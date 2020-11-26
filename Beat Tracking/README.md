@@ -11,3 +11,6 @@ This directory contains the necessary logic for detecting beats and mapping them
 * [Paper by the original author (32 bit version)](http://vud.org/max/icmc98.pdf)
 
 For this to work, make sure that the extracted source files are in Max's search paths before running.
+
+## `bonk_split`
+The `bonk_split` object wraps a `bonk~` object and encapsulates logic to filter beats detected based on attack velocity and frequency. This allows, for example, for client code to directly detect all low frequency, high intensity beats which might correspond to kick drum beats in the input audio stream. 
