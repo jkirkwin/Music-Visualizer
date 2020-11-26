@@ -169,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 131.0, 98.0, 22.0 ],
+					"patching_rect" : [ 191.0, 148.5, 98.0, 22.0 ],
 					"text" : "SpectralCentroid"
 				}
 
