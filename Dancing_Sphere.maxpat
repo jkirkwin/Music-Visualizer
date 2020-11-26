@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1634.0, -194.0, 1612.0, 899.0 ],
+		"rect" : [ 34.0, 79.0, 1724.0, 946.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 940.0, 731.0, 83.0, 22.0 ],
+					"text" : "loadmess 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 705.0, 726.824576377868652, 77.0, 22.0 ],
+					"text" : "loadmess 50"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-178",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1105.141705751419067, 750.324602127075195, 113.0, 34.0 ],
+					"patching_rect" : [ 1123.738249897956848, 738.289499759674072, 113.0, 33.0 ],
 					"text" : "Spin on every 10 high velocity beats"
 				}
 
@@ -56,7 +80,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1060.248297810554504, 776.266990900039673, 42.893407940864563, 22.0 ],
+					"patching_rect" : [ 1078.844841957092285, 764.23188853263855, 42.893407940864563, 22.0 ],
 					"text" : "s spin"
 				}
 
@@ -69,7 +93,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1012.461481928825378, 776.266990900039673, 42.389057040214539, 22.0 ]
+					"patching_rect" : [ 1031.058026075363159, 764.23188853263855, 42.389057040214539, 22.0 ]
 				}
 
 			}
@@ -80,7 +104,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 1012.461481928825378, 743.035102367401123, 90.680223822593689, 22.0 ],
+					"patching_rect" : [ 1031.058026075363159, 731.0, 90.680223822593689, 22.0 ],
 					"text" : "counter 10"
 				}
 
@@ -128,8 +152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 701.477916598320007, 979.87720787525177, 152.0, 62.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 701.477916598320007, 979.87720787525177, 152.0, 60.0 ],
 					"text" : "Need to get line object working properly, current it just output the given int rather than ramping"
 				}
 
@@ -258,8 +281,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 921.954285621643066, 756.324602127075195, 22.649572372436523, 22.0 ],
-					"text" : "30"
+					"patching_rect" : [ 921.954285621643066, 756.324602127075195, 31.649572372436523, 22.0 ],
+					"text" : "100"
 				}
 
 			}
@@ -271,7 +294,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 789.724693179130554, 756.324602127075195, 24.982898950576782, 22.0 ],
-					"text" : "15"
+					"text" : "50"
 				}
 
 			}
@@ -282,8 +305,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 816.707592129707336, 726.824576377868652, 105.0, 48.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 816.707592129707336, 726.824576377868652, 108.0, 47.0 ],
 					"text" : "Set the heartbeat strength based on attack velocity"
 				}
 
@@ -473,7 +495,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.56408679485321, 72.666667938232422, 150.0, 62.0 ],
+					"patching_rect" : [ 720.56408679485321, 72.666667938232422, 150.0, 60.0 ],
 					"text" : "CHANGE TO SOUND FILE OR PLUG IN HEADPHONES BEFORE TURNING ON DAC."
 				}
 
@@ -496,7 +518,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.166667103767395, 906.666693687438965, 242.333321332931519, 75.0 ],
+					"patching_rect" : [ 20.166667103767395, 906.666693687438965, 242.333321332931519, 74.0 ],
 					"text" : "Storage"
 				}
 
@@ -576,7 +598,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1253.230750322341919, 465.708590924739838, 150.0, 117.0 ],
+					"patching_rect" : [ 1253.230750322341919, 465.708590924739838, 150.0, 114.0 ],
 					"text" : "I was hoping to somehow make a 3D matrix based on the audio signal and use that to modulate the objects surface as well. This is currently connected not to the jit object"
 				}
 
@@ -850,7 +872,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1547.333297848701477, 355.666667938232422, 150.0, 48.0 ],
+					"patching_rect" : [ 1547.333297848701477, 355.666667938232422, 150.0, 47.0 ],
 					"text" : "This patch is from the video Rahul sent, need to look into how this works"
 				}
 
@@ -862,7 +884,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.333333611488342, 984.666670560836792, 150.0, 62.0 ],
+					"patching_rect" : [ 60.333333611488342, 984.666670560836792, 150.0, 60.0 ],
 					"text" : "This was used to manipulate the xyz coordinates with sin and cos functions"
 				}
 
@@ -886,7 +908,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1539.333297848701477, 421.166667938232422, 150.0, 34.0 ],
+					"patching_rect" : [ 1539.333297848701477, 421.166667938232422, 150.0, 33.0 ],
 					"text" : "put hard limit of [-2,2] for this int"
 				}
 
@@ -3082,7 +3104,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 303.666667103767395, 433.892856299877167, 128.0, 32.0 ],
-					"saturation" : 0.443137254901961
+					"saturation" : 0.749019607843137
 				}
 
 			}
@@ -4295,6 +4317,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-135", 1 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-70", 0 ]
 				}
@@ -4327,6 +4356,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
 					"source" : [ "obj-89", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 1 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -4401,22 +4437,14 @@
 			}
 , 			{
 				"name" : "bonk_split.maxpat",
-				"bootpath" : "~/Documents/UVic/4th Year/Fall 2020/CSC 475/Project/Music-Visualizer/Beat Tracking",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/Documents/School/School_2020_2021/CSC_475/Final Project/Music-Visualizer/Beat Tracking",
 				"patcherrelativepath" : "./Beat Tracking",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "mc.jit.catch~.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "bonk~.mxe64",
-				"type" : "mx64"
+				"name" : "bonk~.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0
