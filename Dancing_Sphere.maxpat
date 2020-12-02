@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 828.0, 933.0 ],
+		"rect" : [ 34.0, 87.0, 828.0, 934.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -185,7 +185,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1138.007751941680908, 122.666667938232422, 190.845070958137512, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "To play audio from bpatcher\n\n- set output device of Max to headphones or speakers\n- turn on DAC\n- Play audio"
 				}
 
@@ -639,13 +638,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 921.196897208690643, 550.311351793426525, 94.0, 22.0 ],
@@ -678,7 +671,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 930.0, 87.0, 658.0, 543.0 ],
+						"rect" : [ 930.0, 541.0, 828.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1163,13 +1156,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 807.01906019449234, 550.311351793426525, 93.0, 22.0 ],
@@ -1582,13 +1569,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 307.936740100383759, 309.55474317073822, 124.0, 22.0 ],
@@ -2027,13 +2008,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 456.046229243278503, 497.93437748377994, 105.0, 22.0 ],
@@ -2111,12 +2086,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 9,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1459.819961607456207, 122.666667938232422, 150.0, 127.0 ],
-					"text" : "Things to do\n- bpm -> randomness switch\n- \n\n\n\n\n-MIDI implementation"
+					"patching_rect" : [ 1459.819961607456207, 122.666667938232422, 150.0, 167.0 ],
+					"text" : "Things to do\n- bpm -> randomness switch, spin speed\n- Dynamically change thresholds\n- use spectral flux to change speed of colour change\n- spectral rolloff ?\n\n\n-MIDI implementation"
 				}
 
 			}
@@ -2185,8 +2160,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.333333253860474, 323.254579628669717, 65.397440433502197, 22.0 ],
-					"presentation_linecount" : 3,
-					"text" : "0.321445"
+					"text" : "-23.975"
 				}
 
 			}
