@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1558.0, 182.0, 1298.0, 657.0 ],
+		"rect" : [ 518.0, 120.0, 1298.0, 657.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 919.5, 1130.0, 79.0, 75.0 ],
+					"patching_rect" : [ 919.5, 1130.0, 79.0, 74.0 ],
 					"text" : "Sets to 0. when song ends. Delayed by 1000 ms"
 				}
 
@@ -179,7 +179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1160.5, 1327.5, 150.0, 34.0 ],
+					"patching_rect" : [ 1160.5, 1327.5, 150.0, 33.0 ],
 					"text" : "Calculating the average (sum/len)"
 				}
 
@@ -265,7 +265,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1073.0, 1371.0, 202.488037109375, 34.0 ],
+					"patching_rect" : [ 1073.0, 1371.0, 202.488037109375, 33.0 ],
 					"text" : "Outlet for list of most common frequencies in a given timeframe"
 				}
 
@@ -289,7 +289,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 820.0, 1367.0, 150.0, 34.0 ],
+					"patching_rect" : [ 820.0, 1367.0, 150.0, 33.0 ],
 					"text" : "Outlet for bang when audio is finished"
 				}
 
@@ -313,7 +313,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 575.0, 1360.0, 150.0, 48.0 ],
+					"patching_rect" : [ 575.0, 1360.0, 150.0, 47.0 ],
 					"text" : "Output as stream of newly-detected fundamental frequencies"
 				}
 
@@ -349,7 +349,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 341.0, 1369.0, 150.0, 34.0 ],
+					"patching_rect" : [ 341.0, 1369.0, 150.0, 33.0 ],
 					"text" : "Output as list of fundamental frequencies"
 				}
 
@@ -421,7 +421,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 648.714160144329071, 734.023404002189636, 134.0, 34.0 ],
+					"patching_rect" : [ 648.714160144329071, 734.023404002189636, 134.0, 33.0 ],
 					"text" : "Resets zl stack and list contents"
 				}
 
@@ -438,7 +438,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 7,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -678,6 +678,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-48",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -912,9 +913,9 @@
 						"styles" : [ 							{
 								"name" : "helpfile_label-1",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1 ],
-									"fontsize" : [ 13 ],
-									"fontname" : [ "Arial" ]
+									"fontsize" : [ 13 ]
 								}
 ,
 								"parentstyle" : "",
@@ -942,7 +943,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.419287919998169, 410.461536824703217, 153.0, 89.0 ],
+					"patching_rect" : [ 3.419287919998169, 410.461536824703217, 153.0, 87.0 ],
 					"text" : "Things to fix:\nFind out why not all files detect fundamental frequency, if its an issue of amplitude threshold or another factor"
 				}
 
@@ -954,7 +955,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.553193330764771, 57.0, 150.0, 62.0 ],
+					"patching_rect" : [ 720.553193330764771, 57.0, 150.0, 60.0 ],
 					"text" : "Not detecting fundamentals with:\nrainstick.aif\ndrumloop.aif"
 				}
 
@@ -966,9 +967,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 678.553193330764771, 977.791669726371765, 139.0, 34.0 ],
+					"patching_rect" : [ 678.553193330764771, 977.791669726371765, 139.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 372.0, 606.0, 281.0, 34.0 ],
+					"presentation_rect" : [ 372.0, 606.0, 281.0, 33.0 ],
 					"text" : "List in hertz"
 				}
 
@@ -1003,7 +1004,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1790.065185546875, 593.39532470703125, 150.0, 34.0 ],
+					"patching_rect" : [ 1790.065185546875, 593.39532470703125, 150.0, 33.0 ],
 					"text" : "List in Midi, Optional format"
 				}
 
@@ -1015,7 +1016,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1089.553193330764771, 290.010637283325195, 150.0, 48.0 ],
+					"patching_rect" : [ 1089.553193330764771, 290.010637283325195, 150.0, 47.0 ],
 					"text" : "Resets dspstate values and executes list processing for zl thin"
 				}
 
@@ -1024,13 +1025,16 @@
 				"box" : 				{
 					"fontsize" : 20.0,
 					"id" : "obj-90",
+					"linecount" : 26,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 840.55322265625, 977.79168701171875, 517.0, 31.0 ],
+					"patching_rect" : [ 840.55322265625, 977.79168701171875, 517.0, 589.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 368.51202392578125, 642.0, 517.0, 31.0 ]
+					"presentation_linecount" : 26,
+					"presentation_rect" : [ 368.51202392578125, 642.0, 517.0, 589.0 ],
+					"text" : "152.821777 152.771362 234.574463 54.444443 40.237225 185.606049 59.433964 52.5 52.004719 54.044117 51.518692 56.53846 53.004807 52.375298 51.882355 52.251186 51.398602 50.947323 26.95599 53.780487 54.579208 53.260868 35.22364 35.167465 52.92 49.662163 59.274193 49.21875 55.402012 52.751198 52.667198 48.783184 53.218021 51.041668 50.80645 54.714642 51.358696 51.279068 46.716103 58.957218 84.482758 54.08831 49.513474 53.519417 52.4 54.256889 54.221313 53.833008 55.68182 52.16877 441. 52.201706 99.324326 99.864128 100.227272 54.176903 71.590912 50.884613 51.760563 51.84169 51.923077 1225. 51.963863 52.333858 35.33654 56.25 52.437572 60.911602 37.5 57.421875 52.877697 99.773758 54.243542 61.851334 101.769226 105. 57.64706 52.416801 52.357533 37.09 1102.5 50.113636 53.13253 88.023949 52.941177 196.875 52.313168 104.502373 52.18935 59.11528 91.875 51.679688 52.835461 52.47501 52.709164 52.719666 107.3 29.321808 127.826088 127.45665 44.33646 48.249454 156.38298 156.01416 156.753555 159.397598 160.363632 160.948898 49.774265 39.095745 75. 53.649635 77.640846 79.698799 79.126801 62.025318 200.46335 37.627987 49.328857 147. 78.75 78.469749 77.915192 39.375 38.54895 38.820423 39.281475 89.634148 173.895889 39.945652 39.445438 38.414635"
 				}
 
 			}
@@ -1053,7 +1057,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1048.867718756198883, 923.187003970146179, 150.0, 34.0 ],
+					"patching_rect" : [ 1048.867718756198883, 923.187003970146179, 150.0, 33.0 ],
 					"text" : "Filters out repeat frequencies"
 				}
 
@@ -1115,7 +1119,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1460.533642053604126, 601.346154391765594, 161.0, 172.0 ],
+					"patching_rect" : [ 1460.533642053604126, 601.346154391765594, 161.0, 167.0 ],
 					"text" : "zl.stack takes input, the pops all elements with a corresponding bang event that is delayed (taking in number of frequencies). Each element going to zl.join, adding an element to itself for each bang, in a roundabout appending fashion, as a secondary list to join with a banged list are joined and outputted"
 				}
 
@@ -1127,7 +1131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1346.06522411108017, 867.395334243774414, 150.0, 34.0 ],
+					"patching_rect" : [ 1346.06522411108017, 867.395334243774414, 150.0, 33.0 ],
 					"text" : "Outputted List of Frequencies"
 				}
 
@@ -1181,11 +1185,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-78",
+					"linecount" : 44,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1004.06524658203125, 845.89532470703125, 356.0, 22.0 ]
+					"patching_rect" : [ 1004.06524658203125, 845.89532470703125, 356.0, 598.0 ],
+					"text" : "152.821777 152.771362 234.574463 54.444443 54.444443 40.237225 185.606049 59.433964 52.5 52.004719 54.044117 54.044117 54.044117 51.518692 52.004719 56.53846 53.004807 51.518692 51.518692 52.375298 51.882355 52.004719 52.5 52.251186 51.398602 50.947323 52.004719 26.95599 53.780487 52.004719 54.579208 53.260868 35.22364 35.167465 56.53846 52.92 52.5 52.5 49.662163 59.274193 59.274193 52.251186 52.004719 49.21875 55.402012 52.751198 52.667198 52.667198 52.5 52.5 48.783184 53.218021 51.041668 50.80645 54.714642 51.358696 51.279068 46.716103 46.716103 58.957218 84.482758 84.482758 84.482758 84.482758 84.482758 54.08831 49.513474 53.519417 52.4 52.92 54.256889 54.221313 53.833008 53.780487 52.4 55.68182 52.5 52.16877 441. 52.201706 99.324326 99.864128 99.864128 100.227272 52.251186 54.176903 71.590912 51.041668 50.80645 50.884613 51.760563 51.84169 51.882355 51.923077 52.751198 52.751198 52.667198 1225. 55.68182 52.667198 52.5 52.5 52.5 52.5 52.667198 52.375298 51.518692 52.5 52.251186 52.004719 51.963863 52.333858 35.33654 52.5 51.518692 52.004719 56.25 52.251186 52.004719 53.004807 53.004807 52.5 52.437572 60.911602 37.5 57.421875 52.667198 52.751198 52.751198 52.333858 52.333858 51.760563 52.877697 52.751198 99.773758 54.243542 54.243542 61.851334 101.769226 105. 105. 57.64706 52.5 52.5 51.518692 52.004719 51.882355 52.16877 52.004719 52.4 52.251186 100.227272 100.227272 100.227272 100.227272 100.227272 100.227272 51.518692 52.751198 52.5 52.5 52.416801 52.004719 53.004807 52.357533 52.877697 37.09 53.004807 53.004807 53.004807 1102.5 52.5 52.5 53.260868 51.518692 50.113636 50.113636 53.13253 88.023949 53.004807 56.25 56.25 52.941177 196.875 196.875 52.313168 52.375298 104.502373 104.502373 104.502373 52.18935 59.11528 91.875 91.875 52.5 51.679688 52.835461 52.47501 52.709164 52.719666 52.751198 52.751198 107.3 107.3 29.321808 127.826088 127.45665 44.33646 48.249454 51.041668 156.38298 156.01416 156.753555 156.753555 156.753555 156.753555 159.397598 160.363632 160.363632 160.948898 160.948898 160.948898 160.948898 49.774265 39.095745 75. 53.649635 77.640846 79.698799 79.126801 62.025318 200.46335 37.627987 49.328857 49.21875 147. 147. 147. 78.75 78.469749 78.75 77.915192 39.375 39.095745 38.54895 38.820423 39.375 39.375 39.281475 89.634148 39.095745 173.895889 39.945652 38.820423 39.445438 38.414635"
 				}
 
 			}
@@ -1220,7 +1226,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1201.184814453125, 748.0, 114.145713806152344, 22.0 ]
+					"patching_rect" : [ 1201.184814453125, 748.0, 114.145713806152344, 22.0 ],
+					"text" : "224.237289"
 				}
 
 			}
@@ -1268,7 +1275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1214.704647302627563, 441.318328857421875, 150.0, 62.0 ],
+					"patching_rect" : [ 1214.704647302627563, 441.318328857421875, 150.0, 60.0 ],
 					"text" : "Amplify volume for Fundamental Frequency Estimator, change later to be based on input audio"
 				}
 
@@ -1303,7 +1310,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 341.970210075378418, 356.010637283325195, 150.0, 62.0 ],
+					"patching_rect" : [ 341.970210075378418, 356.010637283325195, 150.0, 60.0 ],
 					"text" : "Initialize dspstate~ and Fundamental Frequency Calulator\n"
 				}
 
@@ -1339,7 +1346,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 295.053193330764771, 542.14738929271698, 152.0, 34.0 ],
+					"patching_rect" : [ 295.053193330764771, 542.14738929271698, 152.0, 33.0 ],
 					"text" : "Switching ezdac~ off to on resets analysis values"
 				}
 
@@ -1351,7 +1358,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1320.937824070453644, 33.549102783203125, 150.0, 48.0 ],
+					"patching_rect" : [ 1320.937824070453644, 33.549102783203125, 150.0, 47.0 ],
 					"text" : "Retrieves general information concerning current DSP state"
 				}
 
@@ -1364,7 +1371,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1329.533642053604126, 913.395334243774414, 150.0, 48.0 ],
+					"patching_rect" : [ 1329.533642053604126, 913.395334243774414, 150.0, 47.0 ],
 					"text" : "Possible objects to assist spectral processing with sample values"
 				}
 
@@ -1376,7 +1383,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1469.20458984375, 490.249053955078125, 151.0, 75.0 ],
+					"patching_rect" : [ 1469.20458984375, 490.249053955078125, 151.0, 74.0 ],
 					"text" : "Takes a continous input of detected fundamental frequencies of a sound source and generates a message with all values"
 				}
 
@@ -1388,9 +1395,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1785.20458984375, 402.115386962890625, 286.0, 34.0 ],
+					"patching_rect" : [ 1785.20458984375, 402.115386962890625, 286.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 440.651458740234375, 202.115386962890625, 286.0, 34.0 ],
+					"presentation_rect" : [ 440.651458740234375, 202.115386962890625, 286.0, 33.0 ],
 					"text" : "Onset Detection"
 				}
 
@@ -1405,7 +1412,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1929.704649329185486, 372.115383148193359, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 471.4630126953125, 251.115386962890625, 36.123123168945313, 36.123123168945313 ]
+					"presentation_rect" : [ 471.4630126953125, 251.115386962890625, 36.123123168945312, 36.123123168945312 ]
 				}
 
 			}
@@ -1417,10 +1424,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1636.0, 497.249053955078125, 209.0, 62.0 ],
+					"patching_rect" : [ 1636.0, 497.249053955078125, 209.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 235.651458740234375, 180.115386962890625, 209.0, 62.0 ],
+					"presentation_rect" : [ 235.651458740234375, 180.115386962890625, 209.0, 60.0 ],
 					"text" : "Peak Amplitude of Last Period"
 				}
 
@@ -1433,10 +1440,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1469.20458984375, 428.115386962890625, 205.0, 62.0 ],
+					"patching_rect" : [ 1469.20458984375, 428.115386962890625, 205.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 48.774578094482422, 180.115386962890625, 168.0, 62.0 ],
+					"presentation_rect" : [ 48.774578094482422, 180.115386962890625, 168.0, 60.0 ],
 					"text" : "Fundamental Frequency"
 				}
 
@@ -1451,9 +1458,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1703.704649329185486, 446.115383148193359, 78.0, 43.0 ],
+					"patching_rect" : [ 1703.704649329185486, 446.115383148193359, 78.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 277.024566650390625, 251.115386962890625, 78.0, 43.0 ]
+					"presentation_rect" : [ 277.024566650390625, 251.115386962890625, 78.0, 42.0 ]
 				}
 
 			}
@@ -1467,9 +1474,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1500.5777587890625, 364.318328857421875, 119.62689208984375, 43.0 ],
+					"patching_rect" : [ 1500.5777587890625, 364.318328857421875, 119.62689208984375, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 96.274581909179688, 251.115386962890625, 96.0, 43.0 ]
+					"presentation_rect" : [ 96.274581909179688, 251.115386962890625, 96.0, 42.0 ]
 				}
 
 			}
@@ -1531,9 +1538,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1759.07777327299118, 91.510637283325195, 78.0, 43.0 ],
+					"patching_rect" : [ 1759.07777327299118, 91.510637283325195, 78.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 465.524566650390625, 107.549102783203125, 78.0, 43.0 ]
+					"presentation_rect" : [ 465.524566650390625, 107.549102783203125, 78.0, 42.0 ]
 				}
 
 			}
@@ -1547,9 +1554,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1500.57777327299118, 209.822331309318542, 111.955868780612946, 43.0 ],
+					"patching_rect" : [ 1500.57777327299118, 209.822331309318542, 111.955868780612946, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.774581909179688, 107.549102783203125, 133.0, 43.0 ]
+					"presentation_rect" : [ 77.774581909179688, 107.549102783203125, 133.0, 42.0 ]
 				}
 
 			}
@@ -1560,9 +1567,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1711.57777327299118, 27.549102783203125, 173.0, 34.0 ],
+					"patching_rect" : [ 1711.57777327299118, 27.549102783203125, 173.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 440.524566650390625, 67.549102783203125, 173.0, 34.0 ],
+					"presentation_rect" : [ 440.524566650390625, 67.549102783203125, 173.0, 33.0 ],
 					"text" : "I/O Vector Size"
 				}
 
@@ -1574,9 +1581,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1556.704649329185486, 124.549102783203125, 202.0, 34.0 ],
+					"patching_rect" : [ 1556.704649329185486, 124.549102783203125, 202.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 229.774581909179688, 67.549102783203125, 202.0, 34.0 ],
+					"presentation_rect" : [ 229.774581909179688, 67.549102783203125, 202.0, 33.0 ],
 					"text" : "Vector Size (DSP)"
 				}
 
@@ -1588,9 +1595,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1373.725923776626587, 144.549102783203125, 167.0, 62.0 ],
+					"patching_rect" : [ 1373.725923776626587, 144.549102783203125, 167.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.774578094482422, 67.549102783203125, 167.0, 62.0 ],
+					"presentation_rect" : [ 60.774578094482422, 67.549102783203125, 167.0, 60.0 ],
 					"text" : "Sampling Rate\n"
 				}
 
@@ -1604,9 +1611,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1630.57777327299118, 179.049102783203125, 157.0, 43.0 ],
+					"patching_rect" : [ 1630.57777327299118, 179.049102783203125, 157.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 277.024566650390625, 107.549102783203125, 79.0, 43.0 ]
+					"presentation_rect" : [ 277.024566650390625, 107.549102783203125, 79.0, 42.0 ]
 				}
 
 			}
@@ -1618,7 +1625,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1373.725923776626587, 297.010637283325195, 56.0, 34.0 ],
+					"patching_rect" : [ 1373.725923776626587, 297.010637283325195, 56.0, 33.0 ],
 					"text" : "0 for off, 1 for on"
 				}
 
@@ -1655,10 +1662,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.419287919998169, -28.371740102767944, 292.0, 420.0 ],
+					"patching_rect" : [ 3.419287919998169, -28.371740102767944, 292.0, 409.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 14,
-					"presentation_rect" : [ 1109.595703125, 58.049102783203125, 292.0, 420.0 ],
+					"presentation_rect" : [ 1109.595703125, 58.049102783203125, 292.0, 409.0 ],
 					"text" : "CSC 475 Color Mapping:\nFundFreq.maxpat\n\nDescription: Creates a spectrogram of an incoming audio file or signal, and is able to change between different views and ranges. Then extracts decteted fundamental freqeuncies of FFT's and produces a message with the results\n\n"
 				}
 
@@ -1749,7 +1756,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 630.379749536514282, 183.549102783203125, 183.0, 34.0 ],
+					"patching_rect" : [ 630.379749536514282, 183.549102783203125, 183.0, 33.0 ],
 					"text" : "Testing different ranges and features of ~spectroscope"
 				}
 
@@ -1889,25 +1896,7 @@
 				"patchline" : 				{
 					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
 					"destination" : [ "obj-55", 0 ],
-					"order" : 6,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
-					"destination" : [ "obj-58", 1 ],
 					"order" : 4,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.317647058823529, 0.709803921568627, 0.32156862745098, 1.0 ],
-					"destination" : [ "obj-58", 0 ],
-					"order" : 5,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2398,9 +2387,9 @@
 		"styles" : [ 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1 ],
-					"fontsize" : [ 13 ],
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 13 ]
 				}
 ,
 				"parentstyle" : "",
