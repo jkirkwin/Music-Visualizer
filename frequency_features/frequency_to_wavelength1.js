@@ -1,58 +1,44 @@
 // This code was sourced from : https://cycling74.com/forums/javascript-wavelength-to-rgb
 
-function msg_float(r)
+function get_exponent(r) 
 {
+	n = undefined;
 	if (r >= 73.42 && r < 92.5) 
 	{
-		x = r*Math.pow(2,43);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 43;
 	} 
-	
 	else if (r >= 92.5 && r < 185) 
 	{
-		x = r*Math.pow(2,42);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 42;
 	} 
-
 	else if (r >= 185 && r < 369.99) 
 	{
-		x = r*Math.pow(2,41);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 41;
 	} 
-
 	else if (r >= 369.99 && r < 739.99) 
 	{
-		x = r*Math.pow(2,40);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 40;
 	} 
 	else if (r >= 739.99 && r < 1479.98) 
 	{
-		x = r*Math.pow(2,39);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 39;
 	} 
 	else if (r >= 1479.98 && r < 2959.96) 
 	{
-		x = r*Math.pow(2,38);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 38;
 	} 
 	else if (r >= 2959.96 && r < 5919.92) 
 	{
-		x = r*Math.pow(2,37);
-		x = x*Math.pow(10,-9);
-		x = 299792458/x;
-
+		n = 37;
+	}
+	return n;
 }
-	outlet(0, x);
+
+function msg_float(r)
+{
+	exp = get_exponent(r);
+	if (exp !== undefined) {
+		x = 299792458 / (r * Math.pow(2, exp) * Math.pow(10,-9));
+		outlet(0, x);
+	}
 }
