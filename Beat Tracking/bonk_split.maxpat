@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1634.0, -194.0, 1165.0, 899.0 ],
+		"rect" : [ 930.0, 87.0, 428.0, 934.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,34 +40,12 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 415.0, 662.337981224060059, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.0, 662.337981224060059, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-4",
 					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.0, 45.0, 774.0, 131.0 ],
+					"patching_rect" : [ 127.0, 45.0, 774.0, 127.0 ],
 					"text" : "This patch abstracts some of the necessary logic to pull out useful subsets of beats from an audio signal concurrently.\n\nGiven an audio input, velocity measure, and frequency, the bonk_split object produces four outputs:\n    1. The regular output of bonk~ for the audio input with no parameterization.\n    2. All beats detected by bonk~ that exceed the provided velocity measure. This produces a subset of the bangs produced by (1).\n    3. All beats that exceed the provided velocity measure and are composed of audio above the cutoff frequency. This is a subset of (2).\n    4. All beats that exceed the provided velocity measure and are composed of audio below the cutoff frequency. This is a subset of (2).\n\nNote that (3) and (4) form a partition of (2)."
 				}
 
@@ -150,7 +128,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 716.285016059875488, 231.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -163,7 +141,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 254.785016059875488, 231.276595234870911, 30.0, 30.0 ]
 				}
 
@@ -189,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 254.785016059875488, 393.837981224060059, 150.0, 22.0 ]
+					"patching_rect" : [ 254.785016059875488, 412.837981224060059, 150.0, 22.0 ]
 				}
 
 			}
@@ -214,7 +192,7 @@
 						"maskdecay" : 0.699999988079071,
 						"masktime" : 4,
 						"minbandwidth" : 1.5,
-						"minvel" : 0.0,
+						"minvel" : 55.0,
 						"nfilters" : 11,
 						"npoints" : 256,
 						"overlap" : 1.0,
@@ -233,7 +211,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "list", "list", "" ],
-					"patching_rect" : [ 450.622637271881104, 474.120732188224792, 100.0, 22.0 ],
+					"patching_rect" : [ 458.37457537651062, 477.221507430076599, 100.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"attackframes" : 1,
 						"debouncedecay" : 0.0,
@@ -247,7 +225,7 @@
 						"maskdecay" : 0.699999988079071,
 						"masktime" : 4,
 						"minbandwidth" : 1.5,
-						"minvel" : 7.0,
+						"minvel" : 55.0,
 						"nfilters" : 11,
 						"npoints" : 256,
 						"overlap" : 1.0,
@@ -266,7 +244,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 526.026892781257629, 355.837981224060059, 130.0, 62.0 ],
+					"patching_rect" : [ 526.026892781257629, 355.837981224060059, 130.0, 60.0 ],
 					"text" : "Instead of a dedicated high-pass filter, subtract the low-pass result from the input"
 				}
 
@@ -313,7 +291,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "list", "list", "" ],
-					"patching_rect" : [ 675.785016059875488, 474.120732188224792, 100.0, 22.0 ],
+					"patching_rect" : [ 675.785016059875488, 474.120732188224792, 42.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"attackframes" : 1,
 						"debouncedecay" : 0.0,
@@ -327,7 +305,7 @@
 						"maskdecay" : 0.699999988079071,
 						"masktime" : 4,
 						"minbandwidth" : 1.5,
-						"minvel" : 7.0,
+						"minvel" : 55.0,
 						"nfilters" : 11,
 						"npoints" : 256,
 						"overlap" : 1.0,
@@ -406,7 +384,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 704.785016059875488, 515.337981224060059, 90.0, 34.0 ],
+					"patching_rect" : [ 704.785016059875488, 515.337981224060059, 90.0, 33.0 ],
 					"text" : "Low frequency beats"
 				}
 
@@ -418,7 +396,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 476.785016059875488, 515.337981224060059, 108.0, 34.0 ],
+					"patching_rect" : [ 476.785016059875488, 515.337981224060059, 108.0, 33.0 ],
 					"text" : "High frequency beats"
 				}
 
@@ -430,7 +408,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.785016059875488, 515.337981224060059, 88.0, 34.0 ],
+					"patching_rect" : [ 280.785016059875488, 515.337981224060059, 88.0, 33.0 ],
 					"text" : "More intense beats"
 				}
 
@@ -507,7 +485,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"midpoints" : [ 558.122637271881104, 459.0, 460.122637271881104, 459.0 ],
+					"midpoints" : [ 558.122637271881104, 459.0, 467.87457537651062, 459.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -523,7 +501,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 460.122637271881104, 498.0, 460.285016059875488, 498.0 ],
+					"midpoints" : [ 467.87457537651062, 498.0, 460.285016059875488, 498.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -554,13 +532,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-45", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"midpoints" : [ 267.476505398750305, 498.0, 267.476505398750305, 498.0 ],
 					"source" : [ "obj-45", 0 ]
@@ -569,15 +540,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-45", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 264.285016059875488, 459.0, 685.285016059875488, 459.0 ],
+					"midpoints" : [ 264.285016059875488, 459.931176483631134, 685.285016059875488, 459.931176483631134 ],
 					"order" : 0,
 					"source" : [ "obj-47", 0 ]
 				}
@@ -586,7 +550,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"midpoints" : [ 264.285016059875488, 459.0, 460.122637271881104, 459.0 ],
+					"midpoints" : [ 264.285016059875488, 459.0, 467.87457537651062, 459.0 ],
 					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
@@ -640,7 +604,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 264.285016059875488, 381.0, 264.285016059875488, 381.0 ],
 					"source" : [ "obj-49", 0 ]
 				}
 
