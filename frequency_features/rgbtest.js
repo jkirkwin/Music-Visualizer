@@ -1,4 +1,4 @@
-/ Most of the idea behind this code and author of original code belongs at: https://cycling74.com/forums/javascript-wavelength-to-rgb
+// Most of the idea behind this code and author of original code belongs at: https://cycling74.com/forums/javascript-wavelength-to-rgb
 
 // inlets and outlets
 inlets = 2;
@@ -37,7 +37,7 @@ function anything(wavelength, Spec) {
 	_getColorFromWaveLength(wavelength, Spec);
 	//outputs the 3 RGB values from a given wavelength and Spectral Centroid
 	outlet(0, Red);
-    	outlet(1, Green);
+    outlet(1, Green);
    	outlet(2, Blue);
 	//
  	outlet(3, Gamma);
