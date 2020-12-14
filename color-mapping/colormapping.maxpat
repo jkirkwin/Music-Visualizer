@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 932.0, 756.0, 828.0, 419.0 ],
+		"rect" : [ 930.0, 602.0, 828.0, 419.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -291,7 +291,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 656.070289611816406, 943.720358848571777, 118.085105895996094, 22.0 ],
-					"text" : "1. 0.010445 0. 1."
+					"text" : "1. 0.689122 0. 1."
 				}
 
 			}
@@ -468,7 +468,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domain" : [ 20.0, 20000.0 ],
-					"fgcolor" : [ 0.999999999965667, 0.021759924702916, 0.000000000093815, 1.0 ],
+					"fgcolor" : [ 1.0, 0.6891224994875, 0.0, 1.0 ],
 					"id" : "obj-12",
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
@@ -855,9 +855,9 @@
 		"styles" : [ 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontsize" : [ 13 ],
+					"fontname" : [ "Arial" ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1 ],
-					"fontname" : [ "Arial" ]
+					"fontsize" : [ 13 ]
 				}
 ,
 				"parentstyle" : "",
