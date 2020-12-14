@@ -47,7 +47,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 906.007751941680908, 439.0, 150.0, 100.0 ],
-					"presentation_linecount" : 7,
 					"text" : "Note: you can use bpatcher with an audio interface as well, but only one channel. Using adc~ allows you to specify how many input channels are affecting the visualization"
 				}
 
@@ -1139,7 +1138,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1103.591669142246246, 212.666667938232422, 190.845070958137512, 194.0 ],
-					"presentation_linecount" : 14,
 					"text" : "To play audio from bpatcher\n\n- set output device of Max to audio device, headphones or speakers\n- connect bpatcher to the +~ object\n- connect bpatcher to the DAC\n- disconnect adc~ from +~ object (if connected)\n- disconnect adc~ from the DAC\n- select a source \n- turn on DAC\n- Play audio"
 				}
 
@@ -1893,7 +1891,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 38.293763279914856, 508.000015139579773, 77.556037902832031, 49.0 ],
-									"text" : "123. 120.1 120.1 121.6 121.6"
+									"text" : "141.2 141.2 142.3 142.3 141.1"
 								}
 
 							}
@@ -3553,7 +3551,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 906.007751941680908, 212.666667938232422, 190.845070958137512, 221.0 ],
-					"presentation_linecount" : 16,
 					"text" : "To play audio from audio interface\n\n- set input device of Max to audio interface\n- set output device of Max to  audio device, headphones or speakers\n- connect adc~ to the +~ object (change inputs if necessary)\n- connect adc~ to the DAC\n- disconnect bpacther from +~ object (if connected)\n- disconnect bpather from the DAC\n- turn on DAC\n- Play audio"
 				}
 
@@ -3567,7 +3564,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 676.819961607456207, 212.666667938232422, 220.333321332931519, 221.0 ],
-					"presentation_linecount" : 16,
 					"text" : "To play audio from Spotify/Computer\n\n- download Soundflower 2ch\n- set output device of computer to Soundflower 2ch\n- set input device of Max to Soundflower 2ch \n- set output device of Max to headphones or speakers\n- connect adc~ to the +~ object\n- connect adc~ to the DAC\n- disconnect bpacther from +~ object (if connected)\n- disconnect bpather from the DAC\n- turn on DAC\n- Play audio"
 				}
 
@@ -3649,7 +3645,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 170.333333253860474, 413.254579628669717, 65.397440433502197, 22.0 ],
-					"text" : "-23.975"
+					"text" : "0.538445"
 				}
 
 			}
@@ -6340,6 +6336,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 1 ],
+					"order" : 2,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 3,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 1 ],
+					"order" : 0,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"order" : 1,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-171", 0 ],
 					"order" : 2,
 					"source" : [ "obj-36", 0 ]
@@ -6409,38 +6437,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 1 ],
-					"order" : 2,
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"order" : 3,
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-69", 1 ],
-					"order" : 0,
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"order" : 1,
-					"source" : [ "obj-66", 0 ]
 				}
 
 			}
